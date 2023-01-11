@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="RU">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Дианино Портфолио</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <script src="https://kit.fontawesome.com/a5bd618ea0.js" crossorigin="anonymous"></script> 
+
+        <link rel="stylesheet" href="css/styles.css"/>
+
+        <!-- Google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- HEADER -->
+
+        <header>
+                <div class="four-hearts">
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Что я умею</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Обо мне</a></li>
+                    <li class="nav-item"><a href="#work" class="nav-link">Мои проекты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- INTRO -->
+
+        <section class="intro" id="home">
+            <h1 class="section-title section-title-intro">
+                Привет, я <strong class="strong-accent">Диана:)</strong>
+            </h1>
+            <p class="section-subtitle section-subtitle-intro">front-end dev</p>
+            <img src="images/diana-herself-2.JPG" alt="a picture of Diana touching her hair" class="intro-img" />
+        </section>
+        <section class="my-services" id="services">
+            <h2 class="section-title section-title-services"><strong  class="strong-accent">Что я умею</strong></h2>
+            <div class="services">
+                <div class="service">
+                    <h3>HTML + CSS</h3>
+                    <p>Могу сделать симпатичный и удобный для пользователя адаптивный сайт,</p>
+                </div>
+                <div class="service">
+                    <h3>JavaScript</h3>
+                    <p>... добавить интерактивность,</p>
+                </div>
+                <div class="service">
+                    <h3>Учиться :)</h3>
+                    <p>... всегда готова учиться новому. Сейчас изучаю React</p>
+                </div>
+            </div>
+            <a href="#work" class="btn">Мои проекты</a>
+        </section>
+        
+        <!-- ABOUT -->
+
+        <section class="about-me" id="about">
+            <h2 class="section-title section-title-about"><strong  class="strong-accent">Я кто?</strong></h2>
+            <p class="section-subtitle section-subtitle-about">⠀</p>
+            <div class="about-me-body">
+                <p>
+                    Милая программистка, мечтающая делать классные сайты, которые будут радовать пользователей и заказчиков.
+                </p>
+                <p>
+                    Я окончила СГАУ по специальности "Информатика и вычислительная техника" в 2022 году. Хорошо знаю английский, умею творчески подходить к работе и находить неочевидные решения задач.
+                </p>
+            </div>
+
+            <div class="about-me-img">
+                <img src="images/diana-sequence-1.JPG" alt="Diana looking to the left"/>               
+                <img src="images/diana-sequence-3.JPG" alt="Diana looking to the right"/>
+            </div>
+            
+        </section>
+        
+        <!-- WORKS -->
+
+        <section class="my-work" id="work">
+            <h2 class="section-title"><strong  class="strong-accent">Мои проекты</strong></h2>
+            <p class="section-subtitle">        
+                <div class="section-subtitle section-subtitle-work four-hearts">
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                    <i class="fa-sharp fa-solid fa-heart"></i>
+                </div>
+            </p>
+            <div class="portfolio">
+
+                    <a href="https://redisick.github.io/poffi/" class="portfolio-item" target="blank">
+                        <img src="images/project-poffi.jpg" alt="screenshot of a jewelry website made by Diana" class="portfolio-img"/>
+                    </a>
+                    <p class="portfolio-item-desc">Страница бренда украшений ручной работы</p>
+
+                    <div class="portfolio-item">  
+                        <img src="images/project-blank.jpg" alt="pink placeholder for a future project" class="coming-soon"/>
+                    </div>            
+                    <p class="portfolio-item-desc">скоро... ;)</p>    
+                
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
+
+        <footer class="footer">
+            <a href="mailto:sur-mur@mail.ru" class="footer-link">sur-mur@mail.ru</a>
+            <ul class="social-list">
+                <li class="social-list-item">
+                    <a class="social-list-link" href="https://vk.com/redisick" target="blank">
+                        <i class="fa-brands fa-vk"></i>
+                    </a>
+                </li>       
+            </ul>
+        </footer>
+        
+        <!-- SCRIPT -->
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
