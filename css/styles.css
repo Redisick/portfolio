@@ -3,6 +3,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -14,8 +15,8 @@
     --clr-light: #fff;
     --clr-dark: #303030;
     --clr-accent: rgb(255, 182, 198);
-    --clr-accent-transparent: rgba(238, 87, 119, 0.5);
-    --clr-accent-dark: rgb(243, 141, 163);
+    --clr-accent-transparent: rgba(212, 49, 85, 0.5);
+    --clr-accent-dark: rgb(221, 113, 136);
 
     --fs-h1: 2.5rem;
     --fs-h2: 2rem;
@@ -49,23 +50,94 @@ body {
     font-size: var(--fs-body);
     line-height: 1.6;
 }
+
 section {
     padding: 5em 2em;
 }
+
 img {
     display: block;
     max-width: 100%;
 }
+
+/* Typography */
+
 strong {
     font-weight: var(--fw-bold);   
 }
+
 .strong-accent {
     font-family: var(--ff-accent);
 }
+
 :focus {
     outline: 3px solid var(--clr-light);
     outline-offset: 3px;
 }
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+/* Section styling */
+
+.section-title {
+    margin-bottom: 0.25em;
+}
+
+.section-title-intro {
+    font-weight: var(--fw-reg);
+    line-height: 1.15;
+}
+
+.section-title-intro strong {
+    display: block;
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: var(--fs-h3);
+}
+
+.section-subtitle-intro,
+.section-subtitle-about {
+    background: var(--clr-accent);
+    padding: 0.25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;   
+}
+
+.section-subtitle-work {
+    color: var(--clr-accent);
+    font-weight: var(--fw-bold);
+    margin-bottom: 2em;
+}
+
+.portfolio-item-desc {
+    margin: 1em;
+}
+
+.four-hearts {
+    color: var(--clr-accent);   
+    letter-spacing: 2.5px;
+}
+
+/* Buttons */
 
 .btn {
     display: inline-block;
@@ -82,59 +154,6 @@ strong {
 }
 .btn:hover {
     transform: scale(1.1);
-}
-h1,
-h2,
-h3 {
-    line-height: 1;
-    margin: 0;
-}
-h1 {
-    font-size: var(--fs-h1);
-}
-h2 {
-    font-size: var(--fs-h2);
-}
-h3 {
-    font-size: var(--fs-h3);
-}
-
-.section-title {
-    margin-bottom: 0.25em;
-}
-.section-title-intro {
-    font-weight: var(--fw-reg);
-    line-height: 1.15;
-}
-
-.section-title-intro strong {
-    display: block;
-}
-.section-subtitle {
-    margin: 0;
-    font-size: var(--fs-h3);
-}
-.section-subtitle-intro,
-.section-subtitle-about {
-    background: var(--clr-accent);
-    padding: 0.25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;   
-}
-
-.section-subtitle-work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
-}
-
-.four-hearts {
-    color: var(--clr-accent);   
-    letter-spacing: 2.5px;
-}
-
-.portfolio-item-desc {
-    margin: 1em;
 }
 
 /* Header */
@@ -315,6 +334,7 @@ header {
     color: var(--clr-light);
     position: relative;
 }
+
 .section-title-services::after {
     content: '';
     display: block;
@@ -325,14 +345,18 @@ header {
     opacity: 0.5;
     
 }
+
 .services {
     margin-bottom: 4em;
 }
+
 .service {
     max-width: 500px;
     margin: 0 auto;
 }
+
 @media (min-width: 800px){
+
     .services {
         display: flex;
         max-width: 800px;
@@ -346,14 +370,19 @@ header {
 
 }
 
+/* About */
+
 .about-me {
     max-width: 900px;
     margin: 0 auto;
 }
+
 .about-me-img {
     box-shadow: var(--bs);
 }
+
 @media (min-width: 600px) {
+
     .about-me {
         display: grid;
         grid-template-columns: 1fr 300px;
@@ -363,9 +392,11 @@ header {
                     "text img";
         grid-column-gap: 2em;
     }
+
     .section-title-about {
         grid-area: title;
     }
+
     .section-subtitle-about {
         grid-column: 1 / -1;
         grid-row: 2;        
@@ -377,15 +408,18 @@ header {
         padding-right: calc(300px + 4em);
         
     }
+
     .about-me-img {
         grid-area: img;
         position: relative;        
         z-index: 2;
         height: 400px
-    }   
+    }  
+
 }
 
 /* My Work */
+
 .my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -403,6 +437,7 @@ header {
     background: var(--clr-accent);
     overflow: hidden;
     max-width: 450px;
+    height: 100%;
 }
 
 .coming-soon {
@@ -428,14 +463,17 @@ header {
 }
 
 @media (min-width: 600px){
+
     .portfolio {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
+
     .portfolio-item {
         grid-row: 1;
     }
+
 }
 
 /* Footer */
@@ -477,20 +515,7 @@ header {
 .social-list-item{
     margin: 0 0.5em;
 }
+
 .social-list-link {
     padding: 0.5em;
-}
-
-/* Induvidual portfolio items */
-
-.portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item-individual p{
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
